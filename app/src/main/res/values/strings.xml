@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HSE_mobile</string>
+    <string name="from">Кол-во</string>
+    <string name="convert">Конвертировать</string>
+    <string-array name="currencies">
+        <item>USD</item>
+        <item>RUB</item>
+        <item>EUR</item>
+    </string-array>
+</resources>

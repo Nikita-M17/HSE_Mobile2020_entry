@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/currentCurrencyIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintLeft_toRightOf="@+id/currentCurrencyIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/currentCurrency"/>
+
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="200dp"
+        android:hint="@string/from"
+        android:id="@+id/currentCurrencyValue"
+        app:layout_constraintLeft_toRightOf="@+id/currentCurrency"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="75dp"
+        android:inputType="number"/>
+    <ImageView
+        android:id="@+id/toCurrencyIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/currentCurrencyIcon"/>
+
+    <Spinner
+        android:id="@+id/toCurrency"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintLeft_toRightOf="@+id/toCurrencyIcon"
+        app:layout_constraintTop_toTopOf="@+id/currentCurrency" />
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/convert"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toCurrency" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/convertButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
