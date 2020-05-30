@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HSE_mobile</string>
+    <string name="convert">Convertir</string>
+    <string name="from">El numero</string>
+    <string name="loading">Descarga...</string>
+</resources>

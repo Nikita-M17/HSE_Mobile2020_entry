@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(currentCurrencyValue.getText().length() == 0) {
             Toast.makeText(this, "Введите кол-во денег", Toast.LENGTH_SHORT).show();
         } else {
-            resultText.setText("Загрузка данных...");
+            resultText.setText(R.string.loading);
             ApiService.getInstance().getApi()
                     .getLatest(cur)
                     .enqueue(new Callback<Currency>() {

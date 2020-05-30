@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HSE_mobile</string>
+    <string name="from">Кол-во</string>
+    <string name="convert">Конвертировать</string>
+    <string name="loading">Загрузка...</string>
+</resources>
