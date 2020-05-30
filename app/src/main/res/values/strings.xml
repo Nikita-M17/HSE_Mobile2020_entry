@@ -8,4 +8,6 @@
         <item>EUR</item>
     </string-array>
     <string name="loading">Loading data...</string>
+    <string name="converterror">Cannot convert currency in itself</string>
+    <string name="inputmoneyerror">Input quantity</string>
 </resources>

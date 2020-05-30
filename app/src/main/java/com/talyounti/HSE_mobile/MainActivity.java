@@ -106,8 +106,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        if(currentCurrencyValue.getText().length() == 0) {
-            Toast.makeText(this, "Введите кол-во денег", Toast.LENGTH_SHORT).show();
+        if (to.equals(cur)) {
+            Toast.makeText(this, R.string.converterror, Toast.LENGTH_LONG).show();
+        } else if(currentCurrencyValue.getText().length() == 0) {
+            Toast.makeText(this, R.string.inputmoneyerror, Toast.LENGTH_SHORT).show();
         } else {
             resultText.setText(R.string.loading);
             ApiService.getInstance().getApi()

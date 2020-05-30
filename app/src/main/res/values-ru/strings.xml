@@ -4,4 +4,6 @@
     <string name="from">Кол-во</string>
     <string name="convert">Конвертировать</string>
     <string name="loading">Загрузка...</string>
+    <string name="converterror">Невозможно перевести валюту саму в себя</string>
+    <string name="inputmoneyerror">Введите количество</string>
 </resources>

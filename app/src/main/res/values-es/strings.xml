@@ -4,4 +4,6 @@
     <string name="convert">Convertir</string>
     <string name="from">El numero</string>
     <string name="loading">Descarga...</string>
+    <string name="converterror">Es imposible transferir la moneda a sí mismo</string>
+    <string name="inputmoneyerror">Ingresar cantidad</string>
 </resources>
